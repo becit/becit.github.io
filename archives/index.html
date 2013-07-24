@@ -53,6 +53,215 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2013-07-24T05:35:55.000Z"><a href="/2013/07/24/201307241/">2013 7月 24</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/07/24/201307241/">网页报价文档--Utils模块</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <ul>
+<li><h2><code>Utils</code>模块</h2>
+<ul>
+<li><strong><code>weekDayList</code></strong>: 星期一...星期日</li>
+<li><strong><code>mcMap</code></strong>: <code>[]</code>产品类别ID数组</li>
+<li><strong><code>mcType</code></strong>: <code>{}</code>产品类别名称Map</li>
+<li><strong><code>getUrlParam</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>name</code>: 参数名称</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: 参数value</li>
+<li><strong><code>desc</code></strong>: Url解析    </li>
+</ul>
+</li>
+<li><strong><code>getDateDiff</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>endDate</code>: 结束日期</li>
+<li><code>startDate</code>: 开始日期</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: 二个日期间相差的天数</li>
+<li><strong><code>desc</code></strong>: 日期格式<code>yyyy-MM-dd</code></li>
+</ul>
+</li>
+<li><strong><code>getDateByAddDiff</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>startDate</code>: 基准日期</li>
+<li><code>dayCount</code>: 日期偏移量</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: 新的日期</li>
+<li><strong><code>desc</code></strong>: 根据偏移量计算新的日期</li>
+</ul>
+</li>
+<li><strong><code>ajaxEncode</code></strong>: <ul>
+<li><strong><code>params</code></strong>:<ul>
+<li><code>type</code>: 编码类型</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: <code>none</code></li>
+<li><strong><code>desc</code></strong>: ajax内容编码</li>
+</ul>
+</li>
+<li><strong><code>getColorByPrice</code></strong>: <ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>isEnquiry</code>: 是否询价</li>
+<li><code>costError</code>: 是否成本异常</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: cls类名</li>
+<li><strong><code>desc</code></strong>: 获取产品状态的显示cls</li>
+</ul>
+</li>
+<li><strong><code>getColorByState</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>rs</code>: 处理进度</li>
+<li><code>c_bpartner_id</code>: 供应商ID</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: cls样式</li>
+<li><strong><code>desc</code></strong>: 根据产品的状态获取cls样式</li>
+</ul>
+</li>
+<li><strong><code>getColIndexByMpc</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>mpc</code>: 大类ID</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: 大类的索引</li>
+<li><strong><code>desc</code></strong>: 得到类别索引</li>
+</ul>
+</li>
+<li><strong><code>getMpcByColIndex</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>colIndex</code>: 大类索引</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: 大类的ID</li>
+<li><strong><code>desc</code></strong>: 由索引得到类别</li>
+</ul>
+</li>
+<li><strong><code>getIndexByTr</code></strong>:<ul>
+<li><strong><code>params</code></strong>: <code>none</code></li>
+<li><strong><code>return</code></strong>: 
+  <code>dayIndex</code>: 日期行
+  <code>cityIndex</code>: 城市行</li>
+<li><strong><code>desc</code></strong>: 根据行定位</li>
+</ul>
+</li>
+<li><strong><code>getIndexByTd</code></strong>:<ul>
+<li><strong><code>params</code></strong>: <code>none</code></li>
+<li><strong><code>return</code></strong>: 
+  <code>dayIndex</code>: 日期行
+  <code>cityIndex</code>: 城市行
+  <code>col</code>: 大类行
+  <code>pro</code>: 产品行</li>
+<li><strong><code>desc</code></strong>: 根据表格定位</li>
+</ul>
+</li>
+<li><strong><code>getTdByIndex</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>index</code>: 表格索引</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: <code>$td</code></li>
+<li><strong><code>desc</code></strong>: 根据索引定位表格</li>
+</ul>
+</li>
+<li><strong><code>getProListByIndex</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><code>tdIndex</code>: 表格索引</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: 产品列表</li>
+<li><strong><code>desc</code></strong>: 根据定位得到产品列表</li>
+</ul>
+</li>
+<li><strong><code>getProByTd</code></strong>:<ul>
+<li><strong><code>params</code></strong>: <code>none</code></li>
+<li><strong><code>return</code></strong>: 产品<code>obj</code></li>
+<li><strong><code>desc</code></strong>: 根据表格获取产品数据</li>
+</ul>
+</li>
+<li><strong><code>isEmptyCity</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><strong><code>products</code></strong>: 此城市下的产品</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: <code>boolean</code></li>
+<li><strong><code>desc</code></strong>: 判断此城市是否为空</li>
+</ul>
+</li>
+<li><strong><code>getCityRow</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><strong><code>products</code></strong>: 此城市下的产品</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>: 此城市需要的最大<code>tr</code>行数</li>
+<li><strong><code>desc</code></strong>: 根据产品计算此城市需要的最大行数</li>
+</ul>
+</li>
+<li><strong><code>getExcludedCityByDay</code></strong>:<ul>
+<li><strong><code>params</code></strong><ul>
+<li><strong><code>products</code></strong>: 此城市下的产品</li>
+</ul>
+</li>
+<li><strong><code>return</code></strong>:</li>
+<li><strong><code>desc</code></strong>:     </li>
+</ul>
+</li>
+<li><strong>``</strong>:<ul>
+<li><strong><code>params</code></strong></li>
+<li><strong><code>return</code></strong>:</li>
+<li><strong><code>desc</code></strong>:</li>
+</ul>
+</li>
+<li><strong>``</strong>:<ul>
+<li><strong><code>params</code></strong></li>
+<li><strong><code>return</code></strong>:</li>
+<li><strong><code>desc</code></strong>:</li>
+</ul>
+</li>
+<li><strong>``</strong>:<ul>
+<li><strong><code>params</code></strong></li>
+<li><strong><code>return</code></strong>:</li>
+<li><strong><code>desc</code></strong>:</li>
+</ul>
+</li>
+<li><strong>``</strong>:<ul>
+<li><strong><code>params</code></strong></li>
+<li><strong><code>return</code></strong>:</li>
+<li><strong><code>desc</code></strong>:</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2013-07-22T03:10:52.000Z"><a href="/2013/07/22/201307221/">2013 7月 22</a></time>
       
       
@@ -153,6 +362,8 @@
   
     <li><a href="/categories/删除的文档/">删除的文档</a><small>1</small></li>
   
+    <li><a href="/categories/文档/">文档</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -161,7 +372,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/已删除/" style="font-size: 10.00px;">已删除</a><a href="/tags/日志/" style="font-size: 15.00px;">日志</a>
+    <a href="/tags/已删除/" style="font-size: 10.00px;">已删除</a><a href="/tags/文档/" style="font-size: 17.50px;">文档</a><a href="/tags/日志/" style="font-size: 12.50px;">日志</a><a href="/tags/网页报价/" style="font-size: 15.00px;">网页报价</a>
   </div>
 </div>
 
